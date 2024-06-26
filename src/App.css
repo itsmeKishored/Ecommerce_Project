@@ -1,0 +1,88 @@
+.DARK{
+background-color: black;
+color: azure;
+border: 1px solid white;
+}
+
+.LIGHT{
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid black;
+
+}
+
+.card{
+    border: 2px solid brown;
+    width: 305px
+}
+.card:hover{
+    background-color: lightgreen ;
+}
+
+
+.tit{
+    font-family: cursive;
+    font-weight: 900;
+}
+.des{
+    font-size: small;
+}
+.pri{
+    font-style: oblique;
+    font-weight: 900;
+}
+
+.cc{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+        margin: 5px;
+}
+.fe{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 4%;
+    row-gap: 2%;
+    
+}
+
+.h2{
+    display: flex;
+    gap: 30px;
+}
+
+
+.carttitle{
+    font-family:Trebuchet;
+    font-size: 200%;
+}
+.box{
+    display: flex;
+    border: 2px solid brown;
+    border-radius: 5px;
+    width: 97%;
+    padding: 10px;
+    margin:10px;
+    justify-content: space-between;
+  
+}
+.box div{
+    width: 200px;
+    border: 2px;
+    
+}
+
+.carttitle2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/* .quan{
+    padding-left: 200px;
+}
+.price{
+    padding-left: 200px;
+} */

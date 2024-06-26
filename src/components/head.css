@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    font-size: 200%;
+    border: 1px solid black;
+}
+
+.logo {
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px saddlebrown;
+    padding: 10%;
+}
+
+.he2 {
+    justify-content: left;
+    display: flex;
+    gap: 100PX;
+    /* border: 1px solid black; */
+
+
+}
