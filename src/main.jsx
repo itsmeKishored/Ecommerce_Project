@@ -10,6 +10,7 @@ import Calculater from './components/Calculater'
 import About from './components/About.jsx'
 import Products from './components/Products.jsx'
 import Cart from './components/Cart.jsx'
+import Profile from './components/Profile.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -22,7 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <Route path='/cal' element={<Calculater/>}></Route>
   <Route path='/about' element={<About/>}></Route>
   <Route path='/cart' element={<Cart/>}></Route>
-  
+  <Route path='/profile' element={<Profile/>}></Route>
   
   </Routes></BrowserRouter>
 

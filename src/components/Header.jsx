@@ -13,12 +13,12 @@ function Header() {
                     <div>
                         <img  src={logo} alt='logo' width={50} height={50} className='logo'/>
                     </div>
-                    <div className='he2'>
+                    <div className='nav-links'>
                     {/* <div>Home</div> */}
                     <div><Link to='/products'>Products</Link></div>
                    <div> <Link to='/about'>About</Link></div>
                     <div><Link to='/cart'>cart :{cartItems.length}</Link></div>
-                    <div>Profile</div>
+                    <div><Link to='/Profile'>Profile</Link></div>
                     <ThemeButton />
                     
                     </div>

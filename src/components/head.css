@@ -1,11 +1,13 @@
 .header {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text color */
     display: flex;
-    height: fit-content;
     justify-content: space-between;
-    font-size: 200%;
-    border: 1px solid black;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
+/* 
 .logo {
     border-radius: 50%;
     box-shadow: 2px 2px 20px saddlebrown;
@@ -19,4 +21,27 @@
     /* border: 1px solid black; */
 
 
+.logo {
+    margin-right: 20px; /* Margin to separate logo from links */
+}
+
+/* Navigation Links Style */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links > div {
+    margin-right: 20px; /* Margin between navigation links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff; /* Blue color on hover */
 }

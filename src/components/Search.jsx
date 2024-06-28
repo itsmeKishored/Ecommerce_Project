@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../App.css'
 
 const Search = (props) => {
     const [x, setX] = useState('')
@@ -6,7 +7,7 @@ const Search = (props) => {
         props.setSelectedCategory(x)
       })
   return (<>
-    <div><input type='text'  onChange={(a) => { setX((a.target.value)) }}  placeholder='SEARCH CATEGORIES '/>
+    <div  className="search"><input type='text'  onChange={(a) => { setX((a.target.value)) }}  placeholder='SEARCH CATEGORIES '/>
     <button onClick={handleCategorySelection}>Search</button></div>
 </>
   )}

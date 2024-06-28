@@ -19,12 +19,15 @@ function ProductCard(props) {
     <div className='cc'>
     <div className='card'>
       <center>
-    <img src={image} width={200}height={300} className='img'/>
+    <img src={image} width={200}height={300} className='image-container'/>
     <div className='tit'>{title}</div>
     <div className='des'>{description}</div>
     <div className='pri'> PRICE : ${price}
-      <button onClick={addItems}>ADD CARD</button>
     </div>
+    <div className='cartbuy'>
+      <button onClick={addItems} className='add-to-cart-button'>ADD CARD</button>
+      <button className='buy-now-button'>BUY</button>
+      </div>
     </center>
     </div>
     </div>

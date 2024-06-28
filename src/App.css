@@ -12,13 +12,24 @@ border: 1px solid white;
 }
 
 .card{
-    border: 2px solid brown;
-    width: 305px
+    overflow: hidden; 
+    border: 2px solid rgb(142, 136, 136);
+    width: 305px;
+    height:100%;
+    margin-bottom: 10%;
 }
 .card:hover{
-    background-color: lightgreen ;
+    background-color: rgb(230, 230, 230); 
 }
 
+.card img {
+    transform: scale(1); 
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    /* Scales the image to 110% of its original size */
+  }
+.card img:hover {
+  transform: scale(1.1); /* Scales the image to 110% of its original size */
+}
 
 .tit{
     font-family: cursive;
@@ -33,23 +44,34 @@ border: 1px solid white;
 }
 
 .cc{
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
         margin: 5px;
+        flex: 1 1 calc(33.33% - 10px);
+ /*  margin: 5px;
+  box-sizing: border-box;
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center; */
 }
 .fe{
     display: flex;
+    /* align-items: center; */
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 4%;
-    row-gap: 2%;
+    row-gap: 30px;
     
 }
 
 .h2{
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    border-bottom: 1px solid #ccc; /* Gray border bottom */
 }
 
 
@@ -86,3 +108,96 @@ border: 1px solid white;
 .price{
     padding-left: 200px;
 } */
+.add-to-cart-button {
+    display: inline-block;
+    background-color: #f0c14b; /* Amazon's yellow background */
+    color: #111; /* Black text color */
+    text-align: center;
+    padding: 10px 20px; /* Padding around text */
+    text-decoration: none; /* Remove underline */
+    border: 1px solid #a88734; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2); /* Drop shadow */
+}
+
+.add-to-cart-button:hover {
+    background-color: #e0b642; /* Darker yellow on hover */
+}
+
+.add-to-cart-button:active {
+    background-color: #d9a640; /* Slightly darker yellow on click */
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2); /* Adjusted shadow on click */
+}
+
+
+.buy-now-button {
+    display: inline-block;
+    background-color: #f08804; /* Amazon's orange background */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 10px 20px; /* Padding around text */
+    text-decoration: none; /* Remove underline */
+    border: 1px solid #e47911; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2); /* Drop shadow */
+}
+
+.buy-now-button:hover {
+    background-color: #e67700; /* Darker orange on hover */
+}
+
+.buy-now-button:active {
+    background-color: #d16600; /* Slightly darker orange on click */
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2); /* Adjusted shadow on click */
+}
+
+.cartbuy{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+
+
+
+/* Styles for Topbar component */
+.topbar select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styles for Search component */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type='text'] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #007bff; /* Blue border */
+    border-radius: 0 4px 4px 0;
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
